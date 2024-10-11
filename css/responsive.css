@@ -1,0 +1,124 @@
+Bouchra MILOUDY
+miloudy
+En ligne
+
+Bouchra MILOUDY — Aujourd’hui à 13:40
+slm
+Imanechadli — Aujourd’hui à 13:41
+ok
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .nav-links {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+Afficher plus
+message.txt
+3 Ko
+﻿
+Imanechadli
+imanechadli
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .nav-links {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .nav-links li a {
+      padding: 8px 12px;
+      font-size: 15px;
+    }
+  
+    .logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Responsive styles for screens between 767px and 599px */
+  @media screen and (max-width: 767px) and (min-width: 599px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background-color: #0a043c;
+        /* width: 100%; */
+        /* display: none; */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show when menu icon is checked */
+    }
+  
+    .nav-links li {
+      margin: 0.1px 0;
+      width: 100%;
+    }
+  
+    .nav-links li a {
+      padding: 1px;
+      width: 10%;
+      text-align: end;
+      font-size: 10px;
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu icon */
+    }
+  
+    /* Show nav links when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+  }
+  
+  /* Responsive styles for screens between 599px and 280px */
+  @media screen and (max-width: 599px) and (min-width: 280px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      right: 0%;
+      background-color: #0a043c;
+      width: 100%;
+      /* height: auto; */
+      display: none; /* Initially hidden */
+    }
+  
+    .nav-links li {
+      margin: 0px 0;
+      width: 100%;
+    }
+  
+    .nav-links li a {
+      padding: 0.2px;
+      width: 1%;
+      text-align: end;
+      font-size: 10px;
+    }
+  
+    .logo {
+      max-width: 100px;
+    }
+  
+    /* Show nav links when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+  }

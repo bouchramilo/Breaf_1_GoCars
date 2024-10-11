@@ -1,0 +1,199 @@
+<!-- Le fichier gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoCar - Gallery</title>
+    <meta name="description" content="Rent cars online" />
+    <meta name="keywords" content="cars, rent, online" />
+    <meta name="author" content="Hamza Bouchikhi" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery_2.css" />
+    <style>
+        section.gallery {
+
+            display: flex;
+            /* Ajouté */
+            justify-content: center;
+            /* Centrage horizontal */
+            flex-direction: column;
+            /* Ajouté pour empiler les éléments */
+            align-items: center;
+            /* Centre horizontalement */
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: -5px;
+            /* Réduit l'espace entre les images */
+            max-width: 1000px;
+            /* Largeur max pour le centrage */
+            margin-top: 1.5%;
+            /* Centrer la grille */
+            margin-bottom: 1.5%;
+        }
+
+        .gallery-container .gallery-item {
+            overflow: hidden;
+            /* overflow-y: hidden; */
+            position: center;
+            width: 900px;
+            height: 650px;
+        }
+
+        section.gallery h5 {
+            color: #fff;
+            font-family: "Playfair Display", serif;
+            font-size: 1.5rem;
+            /* margin-bottom: 1.5rem; */
+            /* position: center; */
+            /* justify-content: center; */
+            text-align: center;
+            /* Centre le texte */
+            margin-bottom: 1%;
+            /* Ajoute un espace en bas si nécessaire */
+
+        }
+
+        section.gallery h5 span {
+            color: #a3ddcb;
+        }
+
+        /* .gallery-title {
+        } */
+        .gallery_section {
+            margin-top: 0;
+            height: 500px;
+            overflow-x: hidden;
+        }
+
+        body section.gallery_section{
+            overflow-y: scroll; /* Permet le défilement vertical */
+            /* scrollbar-width: none; Pour Firefox */
+        }
+
+        /* Pour Chrome, Safari, et autres navigateurs basés sur WebKit */
+        body section.gallery_section::-webkit-scrollbar {
+            display: none; /* Cache la barre de défilement */
+        }
+    </style>
+</head>
+
+
+<body style="overflow-x: hidden">
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="Accueil.html"><img src="images/logo.svg" alt="gocar logo" /></a>
+            </div>
+            <button class="ham" onclick="toggleMenu()">
+                <img src="images/menu.svg" alt="menu icon" />
+            </button>
+            <div class="menu">
+                <ul>
+                    <li class="li_menu"><a class="btn_header" href="A_propos.html">A propos de nous</a></li>
+                    <li class="li_menu"><a class="btn_header" href="portfolio.html">Portfolio des voitures</a></li>
+                    <li class="li_menu"><a class="btn_header" href="avantages.html">Avantages</a></li>
+                    <li class="li_menu"><a class="btn_header" href="carte.html">Carte</a></li>
+                    <li class="li_menu"><a class="btn_header" href="contact.html">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Le contenu de la page portfolio  -->
+    <!-- gallery Section -->
+
+    <section class="gallery">
+        <h5 class="gallery-title">Gallery : </h5>
+        <section class="gallery_section">
+
+            <div class="gallery-container container" id="id_img_gallery">
+                <div class="gallery-item">
+                    <div class="gallery-overlay">
+                        <h3>Audi R8 <span>- The Limitless Car</span></h3>
+                        <h3>PRIX : <span>0$</span></h3>
+                    </div>
+                    <img src="images/car3.jpg" alt="Car" class="gallery_img" class="gallery_img" />
+                </div>
+            </div>
+
+            <div class="gallery-container container" id="id_img_gallery">
+                <div class="gallery-item">
+                    <div class="gallery-overlay">
+                        <h3>Audi R9 <span>- The Real Way</span></h3>
+                        <h3>PRIX : <span>0$</span></h3>
+                    </div>
+                    <img src="images/car4.jpg" alt="Car" class="gallery_img" />
+                </div>
+            </div>
+
+            <div class="gallery-container container" id="id_img_gallery">
+                <div class="gallery-item">
+                    <div class="gallery-overlay">
+                        <h3>Audi R11 <span>- A Car!</span></h3>
+                        <h3>PRIX : <span>0$</span></h3>
+                    </div>
+                    <img src="images/car5.jpg" alt="Car" class="gallery_img" />
+                </div>
+            </div>
+
+            <div class="gallery-container container" id="id_img_gallery">
+                <div class="gallery-item">
+                    <div class="gallery-overlay">
+                        <h3>Audi R7 <span>- Ultimate Experience</span></h3>
+                        <h3>PRIX : <span>0$</span></h3>
+                    </div>
+                    <img src="images/car6.jpg" alt="Car" class="gallery_img" />
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- gallery Section End -->
+
+    <!-- Le pied de la page , c'est la même pour toutes les pages de site GoCars -->
+    <footer class="container">
+        <div class="footer-inner">
+            <div>
+                <h4>About Us</h4>
+                <hr />
+                <ul class="footer-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Questions</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <hr />
+                <ul class="footer-menu">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">Advertising</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal Notice</h4>
+                <hr />
+                <ul class="footer-menu">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>All Rights Reserveed - GoCar 2020</p>
+    </footer>
+    <!-- La fin de la pied de la page de portfolio.html -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

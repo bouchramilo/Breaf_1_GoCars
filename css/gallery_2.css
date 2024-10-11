@@ -1,0 +1,110 @@
+section.gallery {
+
+    display: flex;
+    /* Ajouté */
+    justify-content: center;
+    /* Centrage horizontal */
+    flex-direction: column;
+    /* Ajouté pour empiler les éléments */
+    align-items: center;
+    /* Centre horizontalement */
+}
+
+.gallery-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: -5px;
+    /* Réduit l'espace entre les images */
+    max-width: 1000px;
+    /* Largeur max pour le centrage */
+    margin-top: 1.5%;
+    /* Centrer la grille */
+    margin-bottom: 1.5%;
+}
+
+.gallery-container .gallery-item {
+    overflow: hidden;
+    /* overflow-y: hidden; */
+    position: center;
+    width: 900px;
+    height: 650px;
+}
+
+section.gallery h5 {
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    /* position: center; */
+    /* justify-content: center; */
+    text-align: center;
+    /* Centre le texte */
+    margin-bottom: 1%;
+    /* Ajoute un espace en bas si nécessaire */
+
+}
+
+section.gallery h5 span {
+    color: #a3ddcb;
+}
+
+/* .gallery-title {
+        } */
+.gallery_section {
+    margin-top: 0;
+    height: 500px;
+    overflow-x: hidden;
+}
+
+body section.gallery_section {
+    overflow-y: scroll;
+    /* Permet le défilement vertical */
+    /* scrollbar-width: none; Pour Firefox */
+}
+
+/* Pour Chrome, Safari, et autres navigateurs basés sur WebKit */
+body section.gallery_section::-webkit-scrollbar {
+    display: none;
+    /* Cache la barre de défilement */
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+
+    section.gallery {
+        /* background-color: red; */
+        height: 80%;
+        width: 100%;
+        padding-top: 5%;
+        /* padding-bottom: 10px; */
+        margin-bottom: 0%;
+    }
+
+    section.gallery h5.gallery-title {
+        height: 500%;
+        margin-top: 10%;
+        font-size: 0.9rem;
+        padding-top: 0%;
+        /* position: relative; */
+
+    }
+
+    section.gallery section.gallery_section img, 
+    section.gallery section.gallery_section .gallery-container ,
+    section.gallery section.gallery_section .gallery-overlay {
+        height: 50%;
+        width: 350px;
+        padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
+
+    } 
+
+    section.gallery section.gallery_section .gallery-overlay {
+        height: 36%;
+    }
+
+   
+
+}

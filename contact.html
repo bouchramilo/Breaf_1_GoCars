@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoCar - Contactez-nous</title>
+    <meta name="description" content="Rent cars online" />
+    <meta name="keywords" content="cars, rent, online" />
+    <meta name="author" content="Hamza Bouchikhi" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <style>
+        form.forme {
+            width: 110%;
+            padding: 2px 2px 2px 2px;
+            align-items: center;
+        }
+        
+        form.forme input {
+            width: 80%;
+            height: 36px;
+            padding: 2px 2px 2px 2px;
+            border-radius: 16px;
+            background: #fff;
+            color: #0a043c;
+            padding: 2px 2px;
+            text-transform: capitalize;
+            display: inline-block;
+            font-size: 0.9rem;
+            -webkit-transition: 200ms;
+            transition: 200ms;
+            font-weight: 600;
+        }
+
+        form.forme textarea {
+            background-color: #ccc;
+            width: 80%;
+            height: 80px;
+            background: #fff;
+            color: #0a043c;
+            padding: 2px 2px;
+            text-transform: capitalize;
+            display: inline-block;
+            font-size: 0.9rem;
+            -webkit-transition: 200ms;
+            transition: 200ms;
+            font-weight: 600;
+            padding: 2px 2px 2px 2px;
+            border-radius: 16px;
+        }
+        
+    </style> -->
+ 
+
+<style>
+
+
+form.forme {
+    width: 80%; /* Ajustez la largeur */
+    padding: 1%; /* Ajoutez un peu de remplissage */
+    display: flex;
+    flex-direction: column; /* Empile les éléments du formulaire */
+    align-items: center; /* Centre les éléments */
+    }
+    
+    form.forme input,
+    form.forme textarea {
+        width: 100%; /* Rendre les champs à 100% de la largeur du conteneur */
+        max-width: 400px; /* Limite la largeur maximum pour une meilleure apparence sur grands écrans */
+        height: 36px; /* Hauteur des champs de texte */
+        border-radius: 16px; 
+        background: #fff; 
+        color: #0a043c; 
+        padding: 8px; /* Augmente le rembourrage */
+        font-size: 0.9rem; 
+        font-weight: 600;
+        margin-bottom: 0px; /* Espace entre les champs */
+        }
+        
+        form.forme textarea {
+            height: 80px; /* Ajustez la hauteur pour le textarea */
+            }
+            
+            
+            .btn {
+                margin-left: 0%;}
+            
+        </style>
+        
+        
+    </head>
+
+<body style="overflow-x: hidden"></body>
+
+
+<!-- La tête de la page A_propos -->
+
+<header class="header">
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="Accueil.html"><img src="images/logo.svg" alt="gocar logo" /></a>
+        </div>
+        <button class="ham" onclick="toggleMenu()">
+            <img src="images/menu.svg" alt="menu icon" />
+        </button>
+        <div class="menu">
+            <ul>
+                <li class="li_menu"><a class="btn_header" href="A_propos.html">A propos de nous</a></li>
+                <li class="li_menu"><a class="btn_header" href="portfolio.html">Portfolio des voitures</a></li>
+                <li class="li_menu"><a class="btn_header" href="avantages.html">Avantages</a></li>
+                <li class="li_menu"><a class="btn_header" href="carte.html">Carte</a></li>
+                <li class="li_menu"><a class="btn_header" href="contact.html">Contactez-nous</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Le contenu de la page A_propos.html -->
+<section class="about2">
+    <div>
+        <img src="images/car5.jpg" alt="" />
+    </div>
+    <div class="container">
+        <form action="#" class="forme">
+            <h2>Contactez-nous</h2>
+            <input placeholder="Nom" required><br>
+            <input placeholder="Prénom" required><br>
+            <input placeholder="Numéro de téléphone" required><br>
+            <input placeholder="Email" required><br>
+            <textarea placeholder="Votre message" required></textarea><br>
+            <a type="submit" class="btn">Envoyer</a>
+        </form>
+        
+    </div>
+</section>
+
+
+
+<!-- La fin de la page A_propos.html -->
+
+<!-- Le pied de la page  -->
+
+<footer class="container">
+    <div class="footer-inner">
+        <div>
+            <h4>About Us</h4>
+            <hr />
+            <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <hr />
+            <ul class="footer-menu">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Advertising</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Legal Notice</h4>
+            <hr />
+            <ul class="footer-menu">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <p>All Rights Reserveed - GoCar 2020</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>
